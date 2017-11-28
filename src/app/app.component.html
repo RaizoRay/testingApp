@@ -27,7 +27,7 @@
   <input #dsearch type="text" [(ngModel)]="selectedVpc" name="vpcInfo" (click)="clearValues()" (focus)="showOption = true" class="inText form-control"
     placeholder="{{vpcPlaceholder}}">
   <div class="optionDropdown" *ngIf="showOption">
-    <ul class="ulDropdown" [(ngModel)]="vpcId">
+    <ul class="ulDropdown">
       <li class="liDropdown" value="0"  (click)="selectedValue(0)">NONE</li>
       <li class="liDropdown" *ngFor="let vpc of vpCustomersData | filterBy: ['vpcCode']: selectedVpc: strict" name="vpcData" (click)="selectedValue(vpc)"
         value="vpc.vpcId">{{vpc.vpcCode}}</li>
