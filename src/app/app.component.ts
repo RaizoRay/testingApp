@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.getVpCustomersDetails();
+
   }
 
   getVpCustomersDetails() {
@@ -31,21 +32,13 @@ export class AppComponent implements OnInit {
         .subscribe(
           (vpCustomers) => {
             this.vpCustomersData = vpCustomers;
+            // this.getdataService.addCrib(this.vpCustomersData);
             this.initItems();
           },
           errorMsg => errMessage = <any>errorMsg
         );
   }
 
-  // Trial 2
-
-  @HostListener('click') onClickSdropdown() {
-    alert("It Works.");
-   }
-
-
-
-  // End of Trial 2
   public initItems() {
     this.vpCustomersData.forEach((item) => {
       this.vpcCodes.push({ id: item.vpcId, text: item.vpcCode });
@@ -164,3 +157,7 @@ export class AppComponent implements OnInit {
   'Zagreb', 'Zaragoza', 'Łódź'];
 
 }
+
+
+
+

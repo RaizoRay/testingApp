@@ -1,4 +1,4 @@
 export class List {
-    id: number;
-    text: string;
+    vpcId: number;
+    vpcCode: string;
 }
