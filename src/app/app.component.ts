@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   selectedVpc: string = '';
   vpcCoda: string = '';
   vpcPlaceholder: string = 'Select VPC Code';
+  vpcId: number = 205;
 
 
   constructor(private getdataService: GetdataService, private _eref: ElementRef) { }
