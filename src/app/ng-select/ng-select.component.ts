@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, AfterContentChecked } from '@angular/core';
 
 @Component({
   selector: 'ng-select',
@@ -9,11 +9,16 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: []
 })
-export class NgSelectComponent implements OnInit {
-
+export class NgSelectComponent implements OnInit, AfterContentChecked {
+  @Input() public list: Array<any>[];
   constructor() { }
 
   ngOnInit() {
+    
+  }
+
+  ngAfterContentChecked() {
+    console.log('List : ' + this.list);
   }
 
 }
