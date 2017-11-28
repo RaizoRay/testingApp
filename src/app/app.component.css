@@ -1,0 +1,39 @@
+.ulDropdown .liDropdown {
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+}
+
+.optionDropdown {
+    padding-top: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px #888888;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.optionDropdown .liDropdown:hover {
+    background-color: #337ab7;
+    color: #FFF;
+}
+
+.liDropdown {
+    width: 300px;
+    margin-left: -40px;
+    padding-left: 20px !important;
+    padding: 3px;
+    cursor: pointer;
+}
+.vpcLabel {
+    position: absolute;
+    z-index: 99999;
+    left: 28px;
+    top: 7px;
+}
+.inText {
+    position: relative;
+}
+.sdropdown{
+    position: relative;
+    bottom: 34px;
+}
