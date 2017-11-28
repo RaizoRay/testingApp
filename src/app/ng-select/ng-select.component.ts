@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, AfterContentChecked } from '@angular/core';
-import { List } from './list';
 import { GetdataService } from '../services/get-data.service';
 
 @Component({
@@ -12,7 +11,7 @@ import { GetdataService } from '../services/get-data.service';
   styles: []
 })
 export class NgSelectComponent implements OnInit, AfterContentChecked {
-  @Input() public list: Array<List>[];
+  @Input() public list: Array<any>[];
   constructor(public getdataService: GetdataService) { }
 
   ngOnInit() {
