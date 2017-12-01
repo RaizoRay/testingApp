@@ -146,17 +146,6 @@ export class AppComponent implements OnInit {
     {id: 1, fname: 'Rahul', lname: 'Bansode', gender: 'male'},
     {id: 2, fname: 'Sai', lname: 'Purnima', gender: 'female'},
     {id: 3, fname: 'Sri', lname: 'Lakshmi', gender: 'female'},
-    {id: 4, fname: 'Jyotshna', lname: 'putturu', gender: 'female'},
-    {id: 5, fname: 'Manoj', lname: 'Kumar', gender: 'male'},
-    {id: 6, fname: 'Shiva', lname: 'kumar', gender: 'male'},
-    {id: 7, fname: 'Narasimha', lname: 'Reddy', gender: 'male'},
-    {id: 1, fname: 'Rahul', lname: 'Bansode', gender: 'male'},
-    {id: 2, fname: 'Sai', lname: 'Purnima', gender: 'female'},
-    {id: 3, fname: 'Sri', lname: 'Lakshmi', gender: 'female'},
-    {id: 4, fname: 'Jyotshna', lname: 'putturu', gender: 'female'},
-    {id: 5, fname: 'Manoj', lname: 'Kumar', gender: 'male'},
-    {id: 6, fname: 'Shiva', lname: 'kumar', gender: 'male'},
-    {id: 7, fname: 'Narasimha', lname: 'Reddy', gender: 'male'},
   ];
 
 
