@@ -136,14 +136,29 @@ export class AppComponent implements OnInit {
   }
 
   public list: Array<any> = [
-    {id: 1, text: 'Rahul Bansode'},
-    {id: 2, text: 'Sai Purnima'},
-    {id: 3, text: 'Sri Lakshmi'},
-    {id: 4, text: 'Jyotshna'},
-    {id: 5, text: 'Manoj Kumar'},
-    {id: 6, text: 'Shiva'},
-    {id: 7, text: 'Narasimha Reddy'},
+    {id: 1, fname: 'Rahul', lname: 'Bansode', gender: 'male'},
+    {id: 2, fname: 'Sai', lname: 'Purnima', gender: 'female'},
+    {id: 3, fname: 'Sri', lname: 'Lakshmi', gender: 'female'},
+    {id: 4, fname: 'Jyotshna', lname: 'putturu', gender: 'female'},
+    {id: 5, fname: 'Manoj', lname: 'Kumar', gender: 'male'},
+    {id: 6, fname: 'Shiva', lname: 'kumar', gender: 'male'},
+    {id: 7, fname: 'Narasimha', lname: 'Reddy', gender: 'male'},
+    {id: 1, fname: 'Rahul', lname: 'Bansode', gender: 'male'},
+    {id: 2, fname: 'Sai', lname: 'Purnima', gender: 'female'},
+    {id: 3, fname: 'Sri', lname: 'Lakshmi', gender: 'female'},
+    {id: 4, fname: 'Jyotshna', lname: 'putturu', gender: 'female'},
+    {id: 5, fname: 'Manoj', lname: 'Kumar', gender: 'male'},
+    {id: 6, fname: 'Shiva', lname: 'kumar', gender: 'male'},
+    {id: 7, fname: 'Narasimha', lname: 'Reddy', gender: 'male'},
+    {id: 1, fname: 'Rahul', lname: 'Bansode', gender: 'male'},
+    {id: 2, fname: 'Sai', lname: 'Purnima', gender: 'female'},
+    {id: 3, fname: 'Sri', lname: 'Lakshmi', gender: 'female'},
+    {id: 4, fname: 'Jyotshna', lname: 'putturu', gender: 'female'},
+    {id: 5, fname: 'Manoj', lname: 'Kumar', gender: 'male'},
+    {id: 6, fname: 'Shiva', lname: 'kumar', gender: 'male'},
+    {id: 7, fname: 'Narasimha', lname: 'Reddy', gender: 'male'},
   ];
+
 
   public items:Array<string> = ['Amsterdam', 'Antwerp', 'Athens', 'Barcelona',
   'Berlin', 'Birmingham', 'Bradford', 'Bremen', 'Brussels', 'Bucharest',
@@ -160,4 +175,42 @@ export class AppComponent implements OnInit {
 
 
 
+// public selectedValue(data: any){
+//   this.showOption = false;
+//   this.selectedVpc = data.vpcCode;
+//   this.vpcCoda = data.vpcCode;
+//   if(data){
+//     this.vpcPlaceholder = '';
+//   }
+//   else{
+//     this.vpcPlaceholder = 'Select VPC Code';
+//   }
+// }
 
+// public clearValues() {
+//   this.selectedVpc = '';
+// }
+
+// @HostListener('click', ['$event']) onClick(event) {
+//   if ((this.el.nativeElement !== event.target)) {
+//     this.showOption = false;
+//   }
+//  }
+
+//  @HostListener('document:click', ['$event']) onClickDoc(event) {
+//   if ((this.el.nativeElement.tagName !== event.target.tagName)) {
+//     this.showOption = false;
+//   }
+//  }
+
+// @HostListener('window:keydown', ['$event'])
+// keyboardInput(event: any) {
+//   // event.preventDefault();
+//   // event.stopPropagation();
+//   if (event.code === 'Tab') {
+//     this.showOption = false;
+//   }
+//   if (event.shiftKey === true && event.code === 'Tab') {
+//     this.clearValues();
+//   }
+// }

@@ -37,3 +37,23 @@
     position: relative;
     bottom: 34px;
 }
+
+
+
+.grid
+{
+    display: table;
+    padding: 10px;
+}
+.grid-row
+{
+    display: table-row;
+    border: 1px solid #333;
+}
+.grid-data
+{
+    display: table-cell;
+    padding: 10px;
+    width: auto;
+    border: 1px solid #333;
+}

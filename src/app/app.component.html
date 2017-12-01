@@ -53,3 +53,45 @@
   <ng-select [list]="vpCustomersData | json"></ng-select>
 </div>
 
+
+<label>Choose a browser from this list:
+  <input list="browsers" name="myBrowser" /></label>
+  <datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Internet Explorer">
+    <option value="Opera">
+    <option value="Safari">
+    <option value="Microsoft Edge">
+  </datalist>
+
+
+<!-- <div class="search-dropdown" style="margin: 0px; padding: 0px;">
+  <span class="vpcLabel" *ngIf="!showOption">{{vpcCoda}}</span>
+  <input #dsearch type="text" [(ngModel)]="selectedVpc" name="vpcInfo" (click)="clearValues()" (focus)="showOption = true" class="inText form-control"
+    placeholder="{{vpcPlaceholder}}">
+  <div class="optionDropdown" *ngIf="showOption">
+    <ul class="ulDropdown">
+      <li class="liDropdown" value="0"  (click)="selectedValue(0)">NONE</li>
+      <li class="liDropdown" *ngFor="let vpc of vpCustomersData | filterBy: ['vpcCode']: selectedVpc: strict" name="vpcData" (click)="selectedValue(vpc)"
+        value="vpc.vpcId">{{vpc.vpcCode}}</li>
+    </ul>
+  </div>
+</div> -->
+
+<div class="conten">
+  <div class="container-fluid grid">
+    <div class="grid-row grid-header">
+      <div class="grid-data">S.No</div>
+      <div class="grid-data">First Name</div>
+      <div class="grid-data">Last Name</div>
+      <div class="grid-data">Gender</div>
+    </div>
+    <div class="grid-row grid-body" *ngFor="let l of list">
+      <div class="grid-data">{{l.id}}</div>
+      <div class="grid-data">{{l.fname}}</div>
+      <div class="grid-data">{{l.lname}}</div>
+      <div class="grid-data">{{l.gender}}</div>
+    </div>
+  </div>
+</div>
